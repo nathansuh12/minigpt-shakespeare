@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Data and model artifacts
+data/*.txt
+checkpoints/
+*.pt
+*.pth
+*.bin
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Logs
+*.log
+runs/
+wandb/
