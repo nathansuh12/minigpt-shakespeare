@@ -4,11 +4,7 @@ A running log of what I'm learning, things that confused me, and things I want t
 
 ---
 
-## Day 1 — Setup
-
 - Got the repo running. Bigram baseline trains in less than 10 seconds on CPU. note that input forward function for bigram model feeds in whole input so that we can use feed into our transformer the same way.
-
-## Things I want to understand better
 
 - [ ] Why does `view(B*T, C)` work for cross-entropy? by squishing the shape to 2 dimensions, we are able to feed in the input as expected by torch.cross_entropy
 
@@ -25,3 +21,5 @@ trill = torch.tril(torch.ones(T,T))
 weights = torch.zeros((T,T))
 weights = weight.masked_fill(weights = 0, float('-inf'))
 weights = F.softmax(weights, dim=1)
+
+- use residual net to keep the gradients clean by doing x + self attention and x + ffwd. then in order to concatenate but also have the different heads know how to use the information from other heads together, we create another learnable matrix that learns how to combine these together
