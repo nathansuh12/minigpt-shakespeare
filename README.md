@@ -1,4 +1,4 @@
-# nanoGPT — Shakespeare
+# miniGPT — Shakespeare
 
 A from-scratch implementation of a small GPT-style transformer, trained to generate Shakespeare-like text at the character level.
 
