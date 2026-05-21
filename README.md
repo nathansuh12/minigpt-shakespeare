@@ -27,7 +27,7 @@ I'm committing at natural checkpoints to track my learning progression:
 
 ## What I learned
 
-(I'll fill this in as I go — see `notes/` for the running log.)
+see learning_log.md
 
 ## Credits
 
